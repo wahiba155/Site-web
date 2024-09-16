@@ -1,0 +1,55 @@
+ .circle-container {
+    display: flex;
+    align-items: center;
+}
+
+.person-container {
+    text-align: center;
+    color: rgb(69, 115, 156);
+}
+
+.person-circle {
+    width: 5cm;
+    height: 5cm;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.person-circle img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.person-container .fab{
+    margin-right: 10px;
+}
+.person-container .far{
+    margin-right: 10px;
+}
+.person-container li{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: justify;
+    border-radius: 20px;
+}
+.person-container li:hover{
+    background-color: rgb(234, 234, 236);
+}
+.education-container {
+    padding: 20px;
+    border: 1px solid rgb(69, 115, 156);
+    border-radius: 10px;
+    background-color: #F8F9FA;
+}
+
+h2 {
+    color: rgb(69, 115, 156);
+}
+
+.education-container p{
+    font-size: 15px;
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.5;
+}

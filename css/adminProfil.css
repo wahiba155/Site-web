@@ -1,0 +1,87 @@
+/* En Tete de la page administrateur */
+
+.profile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    float: right;
+}
+.imageProfile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile .nomAdmin{
+    font-size: 12px;
+    margin-left: 3px;
+}
+/* formulaire Deconexion de la page administrateur */
+.formulaireDeconnx{
+    display: none;
+    position: fixed;
+    text-align: center;
+    top: 70px;
+    right: 20px;
+    padding: 0 20px 20px 15px;
+    background: rgb(253, 254, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s;
+    z-index: 999;
+}
+.imageProfileDeconnx{
+    margin-top: 20px;
+}
+.imageProfileDeconnx img{
+    width: 133px;
+    height: 130px;
+    border-radius: 50%;
+}
+.nomAdmin{
+    font-weight: 400;
+    font-size: 20px;
+}
+.formulaireDeconnx .nomAdmin{
+    margin-top: 15px;
+}
+.GererProfile{  
+    position: relative;
+    background: none;
+    border-radius: 100px;
+    display: inline-block;
+    outline: 0;
+    padding: 20px 23px 7px 23px;
+    text-align: center;
+}
+.GererProfile:hover{
+    background: rgba(233, 241, 243, 0.75);
+    cursor: pointer;
+
+}
+.GererProfile a{
+    text-decoration: none;
+    color: rgba(5, 87, 165, 0.75);
+}
+.lienDeconnx{
+    margin-top: 10px;
+}
+.lienDeconnx a{
+    font-size: large;
+    text-decoration: none;
+    color: rgba(5, 87, 165, 0.75);
+}
+.lienDeconnx a:hover{
+    color: rgba(183, 205, 226, 0.75);
+}
+.iconX{
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: rgba(5, 87, 165, 0.75);
+}
+.iconX:hover{
+    background: rgba(250, 248, 248, 0.847);
+}

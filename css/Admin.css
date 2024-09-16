@@ -1,0 +1,42 @@
+
+  .welcome-message {
+    position: relative;
+    top: 45%;
+    background-color: #b0c1f1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome-message h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Déplacer la barre latérale en dehors de la vue par défaut */
+  width: 250px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond légèrement transparente */
+  transition: left 0.3s ease; /* Animation de transition fluide */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 20px;
+}
+
+.sidebar ul li a {
+  color: rgb(91, 91, 230); /* Couleur du texte en bleu */
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  color: white; /* Couleur du texte en blanc au survol */
+}

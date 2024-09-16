@@ -1,0 +1,141 @@
+*:not(hr) {
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+section{
+    font-family: poppins;
+}
+#faq{
+    background-color: aliceblue;
+    padding: 0 0px 144px 134px;
+    display: flex;
+    flex-direction: column;
+}
+.faq-heading{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+.faq-heading h3{
+    font-weight: 700px;
+    font-size: 40px;
+    color: rgb(69, 115, 156);
+    text-transform: uppercase;
+    position: relative;
+   
+}
+
+.faq-heading p{
+    font-weight: 400;
+    font-size: 13px;
+    
+    color: #7a7197;
+    max-width: 461px;
+    position: relative;
+    line-height: 57px;
+}
+.faq-content{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.faq-img{
+    width: 100%;
+    border-radius: 27px 0px 0px 27px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 14px 14px 60px rgba(59, 42, 130,0.06);
+}
+.faq-img img{
+    width: 100%;
+    object-fit: contain;
+    object-position: right;
+}
+.faq-box{
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.973);
+    border: 1px solid #ffffff;
+    box-shadow: 14px 14px 60px rgba(59, 42, 130,0.06);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.faq-box:last-child{
+    margin-bottom: 10px;
+}
+.faq-box-container2{
+    width: 100%;
+}
+.faq-box-container{
+    width: 81%;
+}
+
+.faq-box-question{
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.faq-box-question h4{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 31px;
+    color: rgb(69, 115, 156);
+}
+.faq-box-icon{
+    display: block;
+    position: relative;
+    height: 3px;
+    width: 23px;
+    margin-left: auto;
+}
+.faq-box-icon::before,
+.faq-box-icon::after{
+    background: rgb(69, 115, 156);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    transition: all ease-out 0.2s;
+}
+.faq-box-icon::before{
+    top: 0px;
+}
+.faq-box-icon::after{
+    top: 0px;
+    transform: rotate(90deg);
+}
+.faq-box-question.active .faq-box-icon::after{
+    transform: rotate(0deg);
+}
+.faq-box-question.active h4{
+    color: pink;
+}
+.faq-box-answer p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #7a7197;
+    padding-top: 10px;
+}
+.faq-box-answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.5s;
+
+}
+
+
+
+
+

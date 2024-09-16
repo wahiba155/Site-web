@@ -1,0 +1,152 @@
+.baby{
+    background-image: url(../site/bebelfo9.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 15cm;
+    border-radius: 20px;
+    font-family: poppins; 
+}
+
+.baby h6 {
+    width: 45%;
+    margin-top: 1cm;
+    color: gray;
+    font-family: poppins;
+}
+.baby p {
+    width: 40%; /* Utilisation d'un pourcentage pour la largeur */
+    color: rgb(148, 103, 103); 
+    text-align: justify;
+    line-height: 1.5; /* Espacement entre les lignes */
+}
+
+
+@media screen and (max-width: 768px) {
+    .baby {
+        width: 90%;
+        padding-top: 2rem;
+    }
+
+    .baby h3 {
+        width: auto; /* Réinitialiser la largeur */
+    }
+
+    .baby p {
+        width: auto;
+        text-align: left; /* Aligner le texte à gauche pour éviter le justifié qui peut causer des décalages */
+    }
+}
+
+.promotion{
+    background-color: white;
+}
+.content{
+    background-color: rgb(252, 243, 244);
+}
+.buy{
+    background-color: rgb(201, 151, 151);
+}
+
+.liste {
+    list-style: none;
+    padding: 0;
+    margin: 2px;
+    background-color: transparent;
+    overflow: hidden; /* Pour cacher le débordement */
+}
+
+.liste li {
+    float: left; /* Pour aligner les éléments horizontalement */
+    
+}
+
+.liste li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: poppins;
+}
+
+.liste li a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Arrière-plan au survol */
+    border-radius: 20px;
+    color: rgb(69, 115, 156);
+}
+
+
+.link-arrow:first-child {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.5s ease;
+}
+
+.link-arrow:last-child {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.5s ease;
+}
+
+.link-arrow:first-child:hover {
+    background-color: #ccc; /* Changer la couleur de fond au survol */
+    color: #fff; /* Changer la couleur du texte au survol */
+    transform: translateX(-10px); /* Déplacer la première flèche de 10px vers la gauche au survol */
+}
+
+.link-arrow:last-child:hover {
+    background-color: #ccc; /* Changer la couleur de fond au survol */
+    color: #fff; /* Changer la couleur du texte au survol */
+    transform: translateX(10px); /* Déplacer la deuxième flèche de 10px vers la droite au survol */
+}
+
+.link-arrow i:first-child {
+    margin-right: 10px; /* Ajouter un espacement entre le texte et l'icône */
+}
+
+.link-arrow i:last-child {
+    margin-left: 10px; /* Ajouter un espacement entre le texte et l'icône */
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.pagination ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.pagination ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination ul li a:hover {
+    background-color: #ddd;
+}
+.pagination-container {
+    margin-top: 20px; /* Ajustez cette valeur selon vos besoins */
+    margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
+  }

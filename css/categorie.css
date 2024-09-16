@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+.img {
+    width: 6cm;
+    height: 6cm;
+    padding: 17px;
+    margin-top: 1cm;
+    border-radius: 10px; /* Ajoute une bordure arrondie */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ajoute un effet d'ombre */
+    transition: 0.3s; /* Ajoute une transition pour l'effet d'ombre lors du survol */
+}
+body{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+td {
+    width: 7cm;
+    text-align: center;
+    font-weight: bold;
+}
+
+.img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Effet d'ombre accentué lors du survol */
+}
+
+td i{
+    position: absolute;
+   
+   left: 31.7%;
+   font-size: 25px;
+  
+}
+
+caption{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1cm;
+    padding-top: 10px;
+    position: relative;
+   left: 10%;
+   z-index: 1
+}
+
+/* Styles pour la liste de produits cachée */
+/* Styles pour la liste de produits cachée */
+.product-list {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Fond blanc */
+    padding: 10px;
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    border-radius: 5px; /* Coins arrondis */
+    max-width: 200px; /* Largeur maximale */
+    z-index: 1; /* Assure que la liste est au-dessus des autres éléments */
+}
+
+/* Styles pour chaque catégorie au survol */
+.category:hover .product-list {
+    display: block;
+}
+
+/* Styles pour la liste des produits */
+.product-list ul {
+    list-style: none; /* Supprime les puces de la liste */
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li {
+    margin-bottom: 8px;
+}
+
+.product-list a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #333; /* Couleur du texte */
+    display: block;
+    padding: 8px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease; /* Ajoute une transition fluide */
+}
+
+.product-list a:hover {
+    background-color: #f2f2f2; /* Couleur de fond au survol */
+}
+
+.carte-produit {
+    position: relative;
+    z-index: 2;
+    bottom: 80px;
+    width: 101%;
+  }
+  .category {
+    margin-left: 54%;
+   
+}
+
+
