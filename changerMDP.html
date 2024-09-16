@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>changer mot de passe</title>
+    <link rel="stylesheet" href="css/changerMDP.css">
+    
+</head>
+<body>
+    <iframe src="php/acceuil.php"></iframe>
+   <main>
+    
+      <form class="form_container" id="form_container" method="POST" action="php/traitementchangeMDP.php">
+      <svg id="close" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+      </svg>
+                       <label for="mdp" id="lab1">Entrer un nouveau mot de passe:</label>
+                       <input class="form_container_inputs" name="MDP" type="password" placeholder="****" required oninvalid="setCustomValidity('Veuillez saisir un mot de passe.')">
+                       <label for="mdpc" id="lab2">Confirmation de mot de passe:</label>
+                       <input class="form_container_inputs" name="MDPC" type="password" placeholder="****" required oninvalid="setCustomValidity('Veuillez saisir la confirmation.')">
+             
+                       <button class="form_container_button" type="reset" id="retour">Retour</button>           
+                       <button class="form_container_button1" type="submit" name="ok">Enregistrer</button>
+
+       </form>
+    </main>
+    <script>
+       const closeButton = document.getElementById("close");
+
+closeButton.addEventListener("click", () => {
+    window.location.href = "php/acceuil.php";
+});
+const closeButton1 = document.getElementById("retour");
+
+closeButton1.addEventListener("click", () => {
+    window.location.href = "mot_passe.html";
+});
+
+function setCustomValidityMessage(input, message) {
+            if (input.value !== '') {
+                // If the field is not empty, clear the custom validity message
+                input.setCustomValidity('');
+            } else {
+                // If the field is empty, set the custom validity message
+                input.setCustomValidity(message);
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
